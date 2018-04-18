@@ -5,37 +5,37 @@ class Slider extends Component {
 	constructor(props) {
 		super(props);
 
-		this.state = {}
-		this.state.counter = 0
+		this.state = {};
+		this.state.counter = 0;
 		this.state.pictures = [
 				{
 					num: 'first',
-					url: 'https://blogoblog.com.ua/uploads/posts/2017-05/1494962478_krasivaya-priroda-oboi-na-rabochij-stol.jpg',
+					url: 'http://i.huffpost.com/gen/1881487/thumbs/o-OSLO-900.jpg?1',
 				},
 				{
 					num: 'second',
-					url: 'https://blogoblog.com.ua/uploads/posts/2017-05/1494962609_krasivejshie-oboi-na-rabochij-stol-priroda-zima.jpg',
+					url: 'http://i.huffpost.com/gen/1865743/thumbs/o-RIGA-900.jpg?5',
 				},
 				{
 					num: 'third',
-					url: 'https://blogoblog.com.ua/uploads/posts/2017-05/1494962606_krasivye-oboi-priroda-letom-dlya-rabochego-stola.jpg',
+					url: 'http://i.huffpost.com/gen/1878201/thumbs/o-STOCKHOLM-900.jpg?1',
 				},
 				{
 					num: 'fourth',
-					url: 'https://blogoblog.com.ua/uploads/posts/2017-05/1494962581_krasivye-oboi-na-rabochij-stol-priroda-more.jpg',
+					url: 'http://i.huffpost.com/gen/1878650/thumbs/o-COPENHAGEN-900.jpg?1',
 				},
 				{
 					num: 'fifth',
-					url: 'https://blogoblog.com.ua/uploads/posts/2017-05/1494962591_krasivye-oboi-na-rabochij-stol-priroda.jpg'
+					url: 'http://i.huffpost.com/gen/1878792/thumbs/o-BUDAPEST-900.jpg?1'
 				},
 				{
 					num: 'sixth',
-					url: 'https://blogoblog.com.ua/uploads/posts/2017-05/1494962575_krasivye-oboi-priroda-besplatno.jpg'
+					url: 'http://i.huffpost.com/gen/1881536/thumbs/o-CESKY-KRUMLOV-900.jpg?1'
 				}
-			]
+			];
 
-		this.pictureLeft = this.pictureLeft.bind(this)
-		this.pictureRight = this.pictureRight.bind(this)
+		this.pictureLeft = this.pictureLeft.bind(this);
+		this.pictureRight = this.pictureRight.bind(this);
 	}
 
 	pictureLeft () {
@@ -80,6 +80,7 @@ class Slider extends Component {
 							<Picture
 							url={elem.url}
 							num={elem.num}
+							key={i}
 							/>
 						)
 					}
